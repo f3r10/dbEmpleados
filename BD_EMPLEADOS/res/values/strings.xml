@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BD_EMPLEADOS</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="txtnombrecargo"></string>
+    <string name="btnguardar">Guardar</string>
+    <string name="btncancelar">Cancelar</string>
+    <string name="title_activity_listar_activid">ListarActivid</string>
+    <string name="txtnombreempleado"></string>
+    <string name="txtdireccion"></string>
+    <string name="txtsueldo"></string>
+    <string name="spncargos"></string>
+    <string name="title_activity_listar_empleado">ListarEmpleadoActivity</string>
+    <string name="title_activity_listar_para_actualizar">ListarParaActualizarActivity</string>
+    <string name="title_activity_actualizar_empleado">ActualizarEmpleadoActivity</string>
+    <string name="title_activity_borrar_empleado">BorrarEmpleadoActivity</string>
+    <string name="title_activity_vista_principal">VistaPrincipal</string>
+    <string name="title_activity_empleado">EmpleadoActivity</string>
+
+</resources>

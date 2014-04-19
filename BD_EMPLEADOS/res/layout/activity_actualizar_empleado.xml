@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="clip_horizontal"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context=".MenuActivity" >
+
+<TextView
+android:id="@+id/textViewTitulo"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentLeft="true"
+android:layout_alignParentRight="true"
+android:layout_alignParentTop="true"
+android:gravity="center"
+android:text="Actualizar Empleado"
+android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<TextView
+android:id="@+id/textViewtituloIDCargo"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignLeft="@+id/textViewTitulo"
+
+android:layout_below="@+id/textViewTitulo"
+android:layout_marginTop="44dp"
+android:text="ID Empleado:" />
+
+
+<TextView
+android:id="@+id/textViewNombre"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignBottom="@+id/editTextNombre"
+android:layout_alignLeft="@+id/textViewtituloIDCargo"
+android:text="Nombre:" />
+
+
+
+<EditText
+android:id="@+id/editTextNombre"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+
+android:layout_below="@+id/textViewidEmpleado"
+android:layout_toRightOf="@+id/textViewNombre"
+android:ems="10" />
+
+
+
+<TextView
+android:id="@+id/textViewidEmpleado"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignBottom="@+id/textViewtituloIDCargo"
+
+android:layout_alignLeft="@+id/editTextNombre"
+android:layout_alignRight="@+id/editTextNombre"
+android:text="--"
+android:layout_marginLeft="16dp" />
+<!-- android:layout_toRightOf="@+id/textViewidEmpleado"-->
+
+
+<Button
+android:id="@+id/buttonCancelar"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignBaseline="@+id/buttonGuardar"
+android:layout_alignBottom="@+id/buttonGuardar"
+android:layout_toRightOf="@+id/buttonGuardar"
+android:text="Cancelar"
+android:onClick="actualizarIrLista" />
+
+<TextView
+    android:id="@+id/TextViewDireccion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textViewNombre"
+    android:layout_marginTop="29dp"
+    android:text="Direccion:" />
+
+<EditText
+    android:id="@+id/editTextDireccion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/TextViewDireccion"
+    android:layout_alignBottom="@+id/TextViewDireccion"
+    android:layout_alignLeft="@+id/textViewidEmpleado"
+    android:ems="10" >
+
+</EditText>
+
+<TextView
+    android:id="@+id/textViewSueldo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/TextViewDireccion"
+    android:layout_centerVertical="true"
+    android:text="Sueldo" />
+
+<EditText
+    android:id="@+id/editTextSuledo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/textViewSueldo"
+    android:layout_alignLeft="@+id/editTextDireccion"
+    android:ems="10" >
+
+  
+</EditText>
+
+<Button
+    android:id="@+id/buttonGuardar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="26dp"
+    android:layout_toRightOf="@+id/textViewSueldo"
+    android:onClick="actualizarEmpleado"
+    android:text="Guardar" />
+
+<TextView
+    android:id="@+id/textViewCargo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textViewSueldo"
+    android:layout_below="@+id/textViewSueldo"
+    android:layout_marginTop="28dp"
+    android:text="Cargo" />
+
+<TextView
+    android:id="@+id/textViewNombreCargo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textViewCargo"
+    android:layout_alignBottom="@+id/textViewCargo"
+    android:layout_alignRight="@+id/buttonCancelar"
+    android:layout_toRightOf="@+id/textViewtituloIDCargo"
+    android:text="" />
+
+<Spinner
+    android:id="@+id/spinnerNuevoCargo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/buttonCancelar"
+    android:layout_alignLeft="@+id/buttonCancelar" />
+
+<TextView
+    android:id="@+id/textViewNuevoCargo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/spinnerNuevoCargo"
+    android:layout_marginTop="14dp"
+    android:layout_toLeftOf="@+id/textViewNombreCargo"
+    android:text="Seleccionar Nuevo Cargo" />
+
+</RelativeLayout>

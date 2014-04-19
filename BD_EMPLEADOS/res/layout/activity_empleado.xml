@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EmpleadoActivity" >
+
+    <Button
+        android:id="@+id/buttonListarEmpleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonBorrarEmpleado"
+        android:layout_below="@+id/buttonEmpleado"
+        android:layout_marginTop="24dp"
+        android:onClick="menuIrListarEmpleado"
+        android:text="Listar Empleado" />
+
+    <Button
+        android:id="@+id/buttonBorrarEmpleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="menuIrBorrarEmpleado"
+        android:text="Borrar Empleado" />
+
+    <Button
+        android:id="@+id/buttonActualizarEmpleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/buttonEmpleado"
+        android:layout_below="@+id/buttonBorrarEmpleado"
+        android:layout_marginTop="54dp"
+        android:onClick="menuIrActualizarEmpleado"
+        android:text="Actualizar Empleado" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Serivcios empleados" />
+
+    <Button
+        android:id="@+id/buttonEmpleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:onClick="menuIrRegistrarEmpleado"
+        android:text=" Registrar Empleado" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonActualizarEmpleado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text=" Regresar Menu principal"
+        android:onClick="irMenuPrincipal" />
+
+</RelativeLayout>
